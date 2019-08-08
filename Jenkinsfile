@@ -31,7 +31,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh ' docker run -p 8085:8080 --name=taleas1-server '
+                sh ' docker run -p 8085:8080 --name=taleas10-server'
             }
         }
     }
