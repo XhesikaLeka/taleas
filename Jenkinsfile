@@ -31,7 +31,6 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh ' docker run -d -p  8085:8080 --name taleas3-server taleas-image'
                 
                 sh 'docker stop taleas'
                 sh 'docker rm taleas'
