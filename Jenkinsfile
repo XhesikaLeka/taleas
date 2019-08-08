@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checkout-ing project'
-                git 'https://github.com/XhesikaLeka/taleas3.git'
+                git 'https://github.com/XhesikaLeka/taleas.git'
                 echo 'Checkout Success!'
             }
         }
