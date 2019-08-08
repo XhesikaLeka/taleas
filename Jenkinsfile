@@ -30,7 +30,8 @@ pipeline {
         }
 
         stage('Run Container') {
-            steps { sh 'docker run -d -p 8081:8080 --name taleasServer taleas-image'
+            steps { 
+                sh 'docker run -d -p 8084:8080 --link config_service:config_service --name taleas taleas-image'
             }
         }
     }
